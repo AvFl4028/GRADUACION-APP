@@ -57,3 +57,19 @@ ul{
 li{
     text-decoration: none;
 }
+
+@media (max-width: 800px){
+    /*{
+        background: red;
+    }**/
+    .container .text ul img {
+        width: 40%;
+        border: 2px solid black;
+        background: #ffffff;
+    }
+    .container .text ul h2{
+        background: white;
+        font-size: 20px;
+        text-align: center;
+    }
+}
