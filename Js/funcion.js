@@ -1,2 +1,3 @@
-ScrollReveal().reveal('.container');
-ScrollReveal().reveal('.text')
+var Name = prompt('Pon tu nombre');
+var Text = 'Bienvenido';
+var doc = 1;
