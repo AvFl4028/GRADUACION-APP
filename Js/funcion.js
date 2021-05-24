@@ -1,3 +1,3 @@
 var Name = prompt('Pon tu nombre');
 var Text = 'Bienvenido';
-var doc = 1;
+var doc = 2;
