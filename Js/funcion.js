@@ -8,6 +8,7 @@ form.addEventListener('submit', e=> {
 	let warnings = '';
 	let entrar = false
 	parrafo.innerHTML = '';
+	correct.innerHTML = '';
    if (nombre.value.length <5) {
    	// statement
    	warning = 'El nombre no es valido';
