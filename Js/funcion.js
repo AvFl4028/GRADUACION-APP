@@ -1,43 +1,23 @@
-function(){
-    //Variables
-    var lista = document.getElementById("lista"),
-    tareaInput = document.getElementById("tareaInput"),
-    btnNuevaTarea = document.getElementById("btn-agregar");
-    //Funciones
-    var agregarTarea = function(){
-        var tarea = tareaInput.value,
-        nuevaTarea = document.createElement('li'),
-        enlace = document.createElement('a'),
-        contenido = document.createTextNode(tarea);
-    console.log('Creando tarea');
+const nombre = document.getElementById('nombre');
+const form = document.getElementById('form');
+const parrafo = document.getElementById('warning');
+const correct = document.getElementById('correct')
 
-    //Se agragaron contenido para los enlaces
-    enlace.appendChild(contenido);
-    //Le establacemos atributo href
-    enlace.setAttribute('href', '#');
-    //Agregamos enlace a la nueva tarea
-    nuevaTarea.appendChild(enlace);
-    //Se agrega nueva tarea a la lista
-    lista.appendChild(nuevaTarea);
+form.addEventListener('submit', e=> {
+	e.preventDefault()
+	let warnings = '';
+	let entrar = false
+	parrafo.innerHTML = '';
+   if (nombre.value.length <5) {
+   	// statement
+   	warning = 'El nombre no es valido';
+   	console.log('no es valido');
+   	entrar = true
 
-    tareaInput.value = "";
-    for (var i = 0; i <= lista.children.length; i++) {
-        lista.children[i].addEventListener('click',  function(){
-            this.parentNode.removeChild(this);
-        });
-    }
-
-    }
-    var eliminarTarea = function(){
-        console.log('Eliminando Tarea');
-        this.parentNode.removeChild(this)
-    }
-    //Eventos
-    btnNuevaTarea.addEventListener('click', agregarTarea);
-
-    for (var i = 0; i < lista.children.length; i++) {
-        lista.children[i].addEventListener('click', eliminarTarea);
-    }
-    console.log(lista.children.length)
-    console.log("Todo esta bien");
-}())
+   }
+   if (entrar) {
+   	parrafo.innerHTML = warning
+   }else {
+   	correct.innerHTML = 'Bienvenido';
+   }
+})
