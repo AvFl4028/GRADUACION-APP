@@ -1,3 +1,4 @@
+@media(max-width: 700px){
 *{
     margin: 0;
     padding: 0;
@@ -11,17 +12,18 @@
   border: 2px solid black;
   margin: auto;
   width: 95%; 
-  padding: 80px;
   background: #ffffff;
-  height: 1300px;
+  height: 600px;
   transform: translateY(20px);
 }
 
 .h1{
   background: white;
-  font-size: 100px;
+  font-size: 70px;
   text-align: center;
   padding: 10px;
+  width: 100%;
+  margin: auto;
 }
 
 .form-registrer{
@@ -34,8 +36,8 @@
   display: flex;
   width: 100%;
   margin: auto;
-  padding: 50px;
-  font-size: 50px;
+  padding: 0px;
+  font-size: 40px;
 }
 
 .form-registrer .boton{
@@ -44,7 +46,7 @@
   color: #ffffff;
   font-size: 40px;
   margin: auto;
-  width: 40%;
+  width: 70%;
   display: flex;
   transform: translateY(80px);
 }
@@ -52,13 +54,14 @@
 .warning {
   background: #ffffff;
   color: tomato;
-  font-size: 80px;
+  font-size: 60px;
   text-align: center;
+  transform: translateY(60px);
 }
 
 .correct{
   color: greenyellow;
-  font-size: 80px;
+  font-size: 60px;
   background: #ffffff;
   text-align: center;
 }
@@ -85,4 +88,5 @@ opacity: .7;
 }
 .button-link:hover{
   opacity: .7;
+}
 }
