@@ -1,1 +1,0 @@
-intentar hacer un boton con una etiqueta <a> que cuando des clic te mande a la segunda pagina y darle estilo con css y funciones con javascript
