@@ -64,8 +64,7 @@
   font-size: 60px;
   background: #ffffff;
   text-align: center;
-  transform: translateY(0px);
-  padding: 40px;
+  transform: translateY(-10px);
 }
 
 .button-link{
